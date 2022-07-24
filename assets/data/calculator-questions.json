@@ -1,0 +1,34 @@
+[
+  {
+    "question": "Thinking about a typical night in the last month, how long does it take you to fall asleep?",
+    "answerType": "lengthOfTime"
+  },
+  {
+    "question": "Thinking about a typical night in the last month, if you wake up, how long are you awake for in total?",
+    "answerType": "lengthOfTime"
+  },
+  {
+    "question": "Thinking about the last month, how many nights a week do you have a problem with your sleep?",
+    "answerType": "numOfNights"
+  },
+  {
+    "question": "Thinking about a typical night in the last month, how would you rate your sleep quality?",
+    "answerType": "quality"
+  },
+  {
+    "question": "Thinking about the past month, to what extent has poor sleep affected your mood, energy, or relationships?",
+    "answerType": "quantity"
+  },
+  {
+    "question": "Thinking about the past month, to what extent has poor sleep affected your concentration, productivity, or ability to stay awake?",
+    "answerType": "quantity"
+  },
+  {
+    "question": "Thinking about the past month, to what extent has poor sleep troubled you in general?",
+    "answerType": "quantity"
+  },
+  {
+    "question": "How long have you had a problem with your sleep?",
+    "answerType": "numOfMonths"
+  }
+]

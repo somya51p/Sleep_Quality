@@ -1,0 +1,1080 @@
+:root {
+  --blue: teal;
+  --light-grey: #e7e7e7;
+  --grey: #c4c4c4;
+  --dark-grey: #192734;
+  --grey-transparent: rgba(31.8, 43.5, 63.9, 0.4);
+  --white: #f5f5f5;
+  --light-pink: #efdfdf;
+  --light-green: #ccddcc;
+  --white-transparent: rgba(245, 245, 245, 0);
+  --black: #171717;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--white);
+  background-color: var(--blue);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+
+  width: 100%;
+}
+
+h2 {
+  color: var(--light-pink);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.5em;
+
+  text-shadow: 0.05em 0.05em 0.25em var(--dark-grey);
+}
+
+a {
+  color: var(--white);
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  margin: 1.8em 2em;
+  line-height: 1.5em;
+}
+.introduction h1 {
+  font-size: 2em;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+  width: 100%;
+  text-align: center;
+}
+.introduction p {
+  margin: 0.6em;
+  width: 100%;
+}
+.introduction b {
+  font-size: 1.2em;
+}
+
+.calculate_score_button {
+  margin: auto;
+  width: 300px;
+  height: 20px;
+  text-decoration: none;
+  text-align: center;
+  background-color: var(--white);
+  color: var(--black);
+  padding: 1em;
+  font-size: 1em;
+  font-weight: 00;
+  border-radius: 0.5em;
+  transition: background-color 0.5s ease;
+}
+.calculate_score_button:hover {
+  background-color: var(--blue);
+  color: var(--white);
+  border: 0.1em solid var(--light-green);
+}
+
+.calculate_sleep_button {
+  width: 300px;
+  height: 20px;
+  margin-top: 5px;
+  text-decoration: none;
+  text-align: center;
+  background-color: var(--white);
+  color: var(--black);
+  padding: 1em;
+  font-size: 1em;
+  font-weight: 00;
+  border-radius: 0.5em;
+  transition: background-color 0.5s ease;
+}
+.calculate_scleepbutton:hover {
+  background-color: var(--blue);
+  color: var(--white);
+  border: 0.1em solid var(--light-green);
+}
+
+#sleep-benefits {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-top: 1em;
+}
+
+.sleep-benefits__image {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.sleep-benefits__image img {
+  width: 100%;
+  height: auto;
+  border-top: 2px solid var(--white);
+  border-bottom: 2px solid var(--white);
+}
+
+.sleep-benefits__introduction,
+.sleep-benefits__list {
+  width: 80%;
+}
+
+.sleep-benefits__introduction {
+  padding: 2em;
+}
+
+.sleep-benefits__introduction p {
+  font-size: 1em;
+  margin-top: 1em;
+  line-height: 1.4em;
+}
+.sleep-benefits__list {
+  margin-top: 2em;
+}
+
+.sleep-benefits__list summary {
+  margin: 0.8em;
+  font-size: 1.2em;
+}
+
+.sleep-benefits__list details {
+  line-height: 1.4em;
+  font-size: 1em;
+}
+
+.sleep-benefits__list details[open] {
+  padding: 0.5em;
+}
+
+.sleep-benefits__list a {
+  color: var(--white);
+  font-size: 0.9em;
+}
+/* side effects section  */
+
+#side-effects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-top: 1em;
+
+  /* width: 90%; */
+}
+
+.side-effects-intro h2,
+#improve-sleep-quality h2 {
+  font-size: 1.5em;
+}
+
+.side-effects-intro {
+  padding: 2em 2em 1em 2em;
+  width: 80%;
+}
+
+.side-effects-intro p,
+.improve-sleep-quality p {
+  font-size: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  line-height: 1.4em;
+}
+#side-effects a {
+  color: var(--white);
+  font-size: 0.9em;
+}
+
+#side-effects h3 {
+  font-size: 1.1em;
+}
+
+.grid-container {
+  width: 80%;
+  height: auto;
+  padding: 1em 2em 2em 2em;
+  display: grid;
+  grid-template-rows: 1fr;
+}
+.grid-item,
+.top-tips-item {
+  color: var(--white);
+  padding: 1rem;
+  height: auto;
+  max-width: 100%;
+  align-items: flex-start;
+}
+.grid-item p {
+  padding: 0.8em 0;
+  font-size: 1em;
+}
+.grid-item img {
+  height: 12.5em;
+  width: 12.5em;
+  border: 0.25em var(--white) solid;
+  border-radius: 100%;
+}
+
+.top-tips-item {
+  padding: 1em 0;
+}
+
+#sleep-score,
+#improve-sleep-quality {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 2em 2em;
+}
+
+.improve-sleep-quality {
+  position: relative;
+  color: var(--white);
+
+  margin: 1.5em 0;
+  padding: 1em 2em;
+
+  border: 0.15em solid var(--grey);
+  border-radius: 0.75em;
+
+  width: 65%;
+}
+
+.improve-sleep-quality h3 {
+  padding: 1em 0;
+}
+
+#calculator-wrapper {
+  position: relative;
+  background: var(--light-grey);
+  color: var(--black);
+
+  margin: 1em 0;
+  padding: 3em;
+  border-radius: 1em;
+
+  width: 60%;
+  height: 28em;
+}
+
+#calculator {
+  position: absolute;
+  top: 0.25em;
+  left: 0.25em;
+  margin: 1em;
+  padding: 2em;
+}
+
+#calculator h3 {
+  font-size: 0.9em;
+}
+
+#calculator p,
+#calculator form,
+#calculator form #button-container .calculator-button {
+  font-size: 0.8em;
+}
+
+#calculator p {
+  margin: 1em 0;
+}
+
+#calculator form {
+  display: flex;
+  flex-direction: column;
+}
+
+#calculator form input {
+  margin: 0.75em;
+}
+
+#button-container {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+#calculator form #button-container .calculator-button {
+  margin: 1.5em 0 0;
+  padding: 1em;
+
+  width: 40%;
+  height: 4em;
+}
+
+#calculator p.calculator-spacing {
+  margin-bottom: 6em;
+}
+
+#resources {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 3em 0;
+}
+
+#resources h2 {
+  margin: 0 1.5em;
+}
+
+#resources p {
+  font-size: 1.1em;
+  text-align: center;
+}
+
+#resources p:last-child {
+  margin: 0 2em;
+}
+
+#resource-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  background: url('../images/sky-large.jpg') no-repeat;
+
+  margin: 2em 0;
+  padding: 2.5em 0 0;
+
+  border: 0.05em solid var(--light-grey);
+}
+
+.resource-card {
+  height: 14em;
+}
+
+.text-wrapper {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+
+  height: 60%;
+  padding: 1em;
+
+  background-color: var(--grey-transparent);
+
+  text-align: center;
+}
+
+.resource-card a,
+.resource-card p {
+  line-height: 1.5em;
+  letter-spacing: 0.01em;
+}
+
+.resource-card a {
+  grid-row: 2;
+}
+
+#resources .resource-card .text-wrapper p {
+  font-size: 0.9em;
+  grid-row: 3;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 2em 2fr 1fr;
+
+  margin: 1em 0;
+  padding: 1em 0;
+}
+
+footer p {
+  grid-column: 2;
+
+  letter-spacing: 0.01em;
+  line-height: 1.3em;
+
+  text-align: left;
+}
+
+footer a {
+  grid-column: 3;
+  text-align: right;
+
+  margin-right: 1em;
+}
+
+footer p a {
+  margin-right: 0;
+}
+#modal-link {
+  display: inline-block;
+  margin: 1em;
+  cursor: pointer;
+  text-decoration-line: underline;
+
+  background: var(--blue);
+  color: var(--white);
+
+  letter-spacing: 0.01em;
+  font-size: 1em;
+
+  border: none;
+}
+
+#modal-link:hover {
+  font-weight: bold;
+}
+
+#modal-link:after {
+  display: inline-block;
+  content: attr(data-text);
+  height: 0;
+  visibility: hidden;
+  overflow: hidden;
+  user-select: none;
+  pointer-events: none;
+  font-weight: bold;
+
+  letter-spacing: 0.1em;
+  font-size: 1em;
+}
+
+/* Thank you modal  */
+
+.modal {
+  display: none;
+  position: fixed;
+  padding-top: 3em;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.modal-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 0.3em;
+  background-color: var(--blue);
+  padding: 1.8em 4em 4em 4em;
+  width: 60%;
+  font-size: 0.6em;
+  margin: auto;
+}
+.closing {
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.modal-content h2 {
+  width: 50%;
+  text-align: center;
+  margin-bottom: 1em;
+}
+.modal-content h3 {
+  width: 100%;
+  text-align: left;
+}
+
+.modal-content p {
+  text-align: left;
+  line-height: 1.8em;
+  margin: 1em 0em;
+  width: 100%;
+  letter-spacing: 0.1em;
+}
+
+.modal-content a {
+  text-decoration: none;
+  font-size: 1em;
+  font-style: italic;
+  color: var(--white);
+}
+
+.modal-content a:hover {
+  font-weight: bold;
+}
+.close {
+  color: var(--white);
+  font-size: 2em;
+  font-weight: bold;
+  cursor: pointer;
+
+  background-color: var(--blue);
+  border: none;
+}
+
+.cloud-row {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  min-height: 15em;
+}
+
+.lg-cloud,
+.md-cloud,
+.sm-cloud {
+  padding: 0 4em;
+  background-repeat: no-repeat;
+}
+
+.md-cloud,
+.sm-cloud {
+  width: 10em;
+  height: 10em;
+}
+
+.sm-cloud {
+  background: radial-gradient(
+      4em 4em at 50% 50%,
+      var(--white) 49%,
+      var(--white-transparent) 50%
+    ),
+    radial-gradient(
+      2.75em 2.75em at 35% 55%,
+      var(--white) 49%,
+      var(--white-transparent) 50%
+    ),
+    radial-gradient(
+      2.75em 2.75em at 65% 55%,
+      var(--white) 49%,
+      var(--white-transparent) 50%
+    );
+}
+
+.md-cloud {
+  background: radial-gradient(
+      5em 5em at 50% 50%,
+      var(--white) 49%,
+      var(--white-transparent) 50%
+    ),
+    radial-gradient(
+      3.25em 3.25em at 32% 55%,
+      var(--white) 49%,
+      var(--white-transparent) 50%
+    ),
+    radial-gradient(
+      3.25em 3.25em at 68% 55%,
+      var(--white) 49%,
+      var(--white-transparent) 50%
+    );
+}
+
+.lg-cloud {
+  background: radial-gradient(
+      6.5em 6.5em at 50% 50%,
+      var(--white) 49%,
+      var(--white-transparent) 50%
+    ),
+    radial-gradient(
+      4.75em 4.75em at 30% 55%,
+      var(--white) 49%,
+      var(--white-transparent) 50%
+    ),
+    radial-gradient(
+      4.75em 4.75em at 70% 55%,
+      var(--white) 49%,
+      var(--white-transparent) 50%
+    );
+  width: 15em;
+  height: 15em;
+}
+
+@media screen and (min-width: 20em) {
+  #calculator-wrapper {
+    height: 25em;
+  }
+}
+
+@media screen and (min-width: 43em) {
+  #sleep-benefits {
+    flex-direction: row;
+  }
+
+  .sleep-benefits__image,
+  .sleep-benefits__introduction {
+    width: 50%;
+  }
+
+  .sleep-benefits__image {
+    padding: 2em 0 0;
+  }
+
+  .sleep-benefits__image img {
+    width: 20em;
+    height: 12em;
+    border: 2px solid var(--white);
+  }
+
+  .side-effects-intro {
+    padding: 3em 3em 2em 3em;
+    align-self: flex-start;
+  }
+
+  .grid-container {
+    padding: 1em 2em 2em 2em;
+  }
+  .grid-item p {
+    padding: 0.8em 0;
+    font-size: 1em;
+  }
+  #calculator-wrapper {
+    height: 20em;
+  }
+
+  #resource-wrapper {
+    background: none;
+    border: none;
+    margin: 1em 0;
+    padding: 0;
+  }
+
+  .resource-card {
+    background: url('../images/sky.jpg') no-repeat;
+    margin: 1em;
+    padding: 1em;
+
+    width: 23em;
+
+    border: 0.05em solid var(--light-grey);
+  }
+
+  .text-wrapper {
+    height: 80%;
+  }
+
+  footer {
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+
+  footer p {
+    text-align: center;
+  }
+
+  footer a {
+    margin-right: 2em;
+  }
+  .modal-content {
+    margin: auto;
+  }
+
+  .sm-cloud {
+    background: radial-gradient(
+        4.5em 4.5em at 50% 50%,
+        var(--white) 49%,
+        var(--white-transparent) 50%
+      ),
+      radial-gradient(
+        2.75em 2.75em at 38% 55%,
+        var(--white) 49%,
+        var(--white-transparent) 50%
+      ),
+      radial-gradient(
+        2.75em 2.75em at 62% 55%,
+        var(--white) 49%,
+        var(--white-transparent) 50%
+      );
+  }
+
+  .md-cloud {
+    background: radial-gradient(
+        6.5em 6.5em at 50% 50%,
+        var(--white) 49%,
+        var(--white-transparent) 50%
+      ),
+      radial-gradient(
+        4.25em 4.25em at 35% 55%,
+        var(--white) 49%,
+        var(--white-transparent) 50%
+      ),
+      radial-gradient(
+        4.25em 4.25em at 65% 55%,
+        var(--white) 49%,
+        var(--white-transparent) 50%
+      );
+  }
+
+  .lg-cloud {
+    background: radial-gradient(
+        9em 9em at 50% 50%,
+        var(--white) 49%,
+        var(--white-transparent) 50%
+      ),
+      radial-gradient(
+        5.5em 5.5em at 34% 55%,
+        var(--white) 49%,
+        var(--white-transparent) 50%
+      ),
+      radial-gradient(
+        5.5em 5.5em at 66% 55%,
+        var(--white) 49%,
+        var(--white-transparent) 50%
+      );
+    width: 15em;
+    height: 15em;
+  }
+}
+
+@media screen and (min-width: 62em) {
+  .introduction,
+  .introduction b,
+  .sleep-benefits__introduction p,
+  #calculator p,
+  #calculator form,
+  .sleep-benefits__list details {
+    font-size: 1.3em;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+
+  .sleep-benefits__introduction {
+    padding: 2em;
+  }
+
+  .sleep-benefits__list summary,
+  #calculator h3 {
+    font-size: 1.5em;
+  }
+
+  .sleep-benefits__list summary {
+    line-height: 1.4em;
+  }
+  .side-effects-intro {
+    padding: 2em 2em 1em 2em;
+    text-align: center;
+    align-self: center;
+  }
+  .side-effects,
+  .side-effects-intro p,
+  .improve-sleep-quality h3,
+  .improve-sleep-quality h4,
+  .improve-sleep-quality p {
+    font-size: 1.2em;
+  }
+
+  .grid-container {
+    width: 100%;
+    height: auto;
+    padding: 1em 2em 2em 2em;
+    color: var(--white);
+    display: grid;
+    align-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0.5em 0.5em;
+    position: relative;
+  }
+  .grid-item {
+    font-size: 1.2em;
+    padding: 1.5em;
+  }
+
+  #col-2-row-3-item-2 {
+    grid-column: 3 / span 1;
+  }
+  #calculator-wrapper {
+    height: 25em;
+  }
+
+  #calculator form #button-container .calculator-button {
+    height: 3em;
+    font-size: 1em;
+  }
+
+  #resources p {
+    font-size: 1.3em;
+  }
+
+  #resource-wrapper {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .resource-card {
+    width: 16em;
+  }
+
+  footer {
+    margin: 1em 5em 3em 0;
+    padding: 1em;
+  }
+
+  footer a {
+    margin-right: 0;
+  }
+  .modal-content {
+    margin: auto;
+    font-size: 0.8em;
+  }
+
+  .sm-cloud {
+    background: radial-gradient(
+        5em 5em at 50% 50%,
+        var(--white) 49%,
+        var(--white-transparent) 50%
+      ),
+      radial-gradient(
+        3.5em 3.5em at 37% 55%,
+        var(--white) 49%,
+        var(--white-transparent) 50%
+      ),
+      radial-gradient(
+        3.5em 3.5em at 62% 55%,
+        var(--white) 49%,
+        var(--white-transparent) 50%
+      );
+  }
+
+  .md-cloud {
+    background: radial-gradient(
+        7em 7em at 50% 50%,
+        var(--white) 49%,
+        var(--white-transparent) 50%
+      ),
+      radial-gradient(
+        5em 5em at 35% 55%,
+        var(--white) 49%,
+        var(--white-transparent) 50%
+      ),
+      radial-gradient(
+        5em 5em at 65% 55%,
+        var(--white) 49%,
+        var(--white-transparent) 50%
+      );
+  }
+
+  .lg-cloud {
+    background: radial-gradient(
+        11em 11em at 50% 50%,
+        var(--white) 49%,
+        var(--white-transparent) 50%
+      ),
+      radial-gradient(
+        7.5em 7.5em at 30% 55%,
+        var(--white) 49%,
+        var(--white-transparent) 50%
+      ),
+      radial-gradient(
+        7.5em 7.5em at 70% 55%,
+        var(--white) 49%,
+        var(--white-transparent) 50%
+      );
+    width: 15em;
+    height: 15em;
+  }
+
+  .top-tips-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0.625em;
+  }
+
+  .top-tips-item {
+    padding: 1.25em;
+    font-size: 1em;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 75em) {
+  .introduction,
+  .sleep-benefits__introduction p,
+  #calculator p,
+  #calculator form,
+  .sleep-benefits__list details {
+    font-size: 1em;
+  }
+
+  small {
+    font-size: 0.8em;
+  }
+
+  .introduction {
+    margin: 1.8em 4em;
+    line-height: 1.8em;
+  }
+  .introduction h1 {
+    margin-bottom: 1.5em;
+  }
+  .introduction p {
+    width: 60%;
+  }
+
+  #sleep-benefits {
+    flex-direction: row;
+    margin-top: 8em;
+  }
+
+  .sleep-benefits__image {
+    padding: 2em 0 0;
+  }
+
+  .sleep-benefits__image img {
+    height: 25em;
+    width: 35em;
+    border: 2px solid var(--white);
+  }
+
+  .sleep-benefits__introduction {
+    width: 50%;
+  }
+
+  .sleep-benefits__introduction p {
+    font-size: 1.2em;
+  }
+  .sleep-benefits__list {
+    width: 40em;
+  }
+  #side-effects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 3em;
+    color: var(--white);
+  }
+
+  .side-effects,
+  .side-effects-intro p,
+  .improve-sleep-quality p {
+    font-size: 1.2em;
+  }
+  .side-effects-intro {
+    align-self: center;
+    text-align: center;
+  }
+  .grid-item {
+    font-size: 1.2em;
+    text-align: center;
+  }
+  .grid-item img {
+    height: 25em;
+    width: 25em;
+    border: 0.25em var(--white) solid;
+    border-radius: 100%;
+  }
+
+  .grid-container {
+    width: 100%;
+    height: auto;
+    padding: 4em 4em;
+    color: var(--white);
+    display: grid;
+    align-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: auto min-content auto;
+    grid-template-rows: auto min-content auto;
+    gap: 0.5em 0.5em;
+    position: relative;
+  }
+  #col-3-row-3-item-3 {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    grid-column: 3 / span 1;
+  }
+  #sleep-score {
+    margin: 0 0 2em;
+  }
+
+  #calculator-wrapper {
+    height: 20em;
+  }
+
+  #calculator p,
+  #calculator form {
+    font-size: 1em;
+  }
+
+  #calculator form #button-container .calculator-button {
+    margin: 1em 0 0;
+    height: 4em;
+  }
+
+  .resource-card {
+    width: 18em;
+  }
+
+  footer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .modal-content {
+    margin: auto;
+    font-size: 0.8em;
+  }
+
+  .sm-cloud {
+    background: radial-gradient(
+        5em 5em at 50% 50%,
+        var(--white) 49%,
+        var(--white-transparent) 50%
+      ),
+      radial-gradient(
+        3.5em 3.5em at 37% 55%,
+        var(--white) 49%,
+        var(--white-transparent) 50%
+      ),
+      radial-gradient(
+        3.5em 3.5em at 62% 55%,
+        var(--white) 49%,
+        var(--white-transparent) 50%
+      );
+  }
+
+  .md-cloud {
+    background: radial-gradient(
+        7em 7em at 50% 50%,
+        var(--white) 49%,
+        var(--white-transparent) 50%
+      ),
+      radial-gradient(
+        5em 5em at 35% 55%,
+        var(--white) 49%,
+        var(--white-transparent) 50%
+      ),
+      radial-gradient(
+        5em 5em at 65% 55%,
+        var(--white) 49%,
+        var(--white-transparent) 50%
+      );
+  }
+
+  .lg-cloud {
+    background: radial-gradient(
+        11em 11em at 50% 50%,
+        var(--white) 49%,
+        var(--white-transparent) 50%
+      ),
+      radial-gradient(
+        7.5em 7.5em at 30% 55%,
+        var(--white) 49%,
+        var(--white-transparent) 50%
+      ),
+      radial-gradient(
+        7.5em 7.5em at 70% 55%,
+        var(--white) 49%,
+        var(--white-transparent) 50%
+      );
+    width: 15em;
+    height: 15em;
+  }
+}
+.calculate_sleep_button {
+  padding-bottom: 2rem;
+}

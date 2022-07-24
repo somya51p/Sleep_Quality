@@ -1,0 +1,25 @@
+{
+  "lengthOfTime": [
+    "0-15 minutes",
+    "16-30 minutes",
+    "31-45 minutes",
+    "46-60 minutes",
+    "More than 61 minutes"
+  ],
+  "numOfNights": [
+    "0-1 nights",
+    "2 nights",
+    "3 nights",
+    "4 nights",
+    "5-7 nights"
+  ],
+  "quality": ["Very good", "Good", "Average", "Poor", "Very poor"],
+  "quantity": ["Not at all", "A little", "Somewhat", "Much", "Very much"],
+  "numOfMonths": [
+    "I don't have a problem (or I've had a problem for less than one month)",
+    "1-2 months",
+    "3-6 months",
+    "7-12 months",
+    "Longer than a year"
+  ]
+}
