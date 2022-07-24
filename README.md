@@ -3,15 +3,25 @@
 ## PROBLEM IDENTIFICATION
 
 Following are the problems which are the result of poor sleep quality that we identified through observation and user study(survey) :
+
 -> Sleep disorders like insomnia
+
 -> Severe weight/hair loss
+
 -> Stress/anxiety level which causes depression
+
 -> Work-life balance gets disrupted
+
 -> Mood swings
+
 -> Memory issues and poor attention span
+
 -> High blood pressure that increases the risk of heart disease
+
 -> Risk for diabetes
+
 -> Poor balance and motivation
+
 -> Poor organizational skills
 
 ## PROBLEM DEFINITION 
