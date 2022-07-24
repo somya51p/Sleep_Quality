@@ -54,5 +54,9 @@ def home():
 def index():
     return render_template("index.html")
 
+@app.route("/quality")
+def quality():
+    return render_template("quality.html")
+
 if __name__=="__main__":
     app.run(debug=True)
