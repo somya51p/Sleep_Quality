@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./scss/main.css">
+    <link rel="stylesheet" href="../static/scss/main.css">
     <link rel="shortcut icon" type="image/jpeg" href="./images/fav.jpeg">
     <title>ERS</title>
   </head>
@@ -15,7 +15,7 @@
     <div class="main_header">
         <nav class="navbar navbar-expand-lg ">
             <div class="container">
-              <a class="navbar-brand" href="/"><i class="fas"><img src="./images/logo.png" style="width: 50%;" alt="" /></i></a>
+              <a class="navbar-brand" href="/"><i class="fas"><img src={{ url_for('static', filename='./images/logo.png') }} style="width: 50%;" alt="" /></i></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -61,12 +61,12 @@
                         <p>Sleep trackers are devices used to measure sleep quality. Sleep trackers measure how long you have slept, the depth of your sleep, and other sleeping habits. Sleep trackers can be valuable in gaining insight into how much sleep you are getting and, as a result, making lifestyle changes to optimise your sleeping experience.</p>
                     </div>
                     <div class="header_hero__btn">
-                        <a href="./index.html" alt="">Take a Tour</a>
+                        <a href="{{url_for('index')}}" alt="">Take a Tour</a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-10 mx-auto">
                     <figure class="header_hero__img">
-                        <img src="./images/robot.png" alt="" />
+                        <img src={{ url_for('static', filename='./images/robot.png') }} alt="" />
                     </figure>
                 </div>
             </div>
@@ -74,11 +74,11 @@
     </div>
     <section id="about" class="about container-fluid">
         <div class="title container">
-            <h2>About US</h2>
+            <h2>About the Project</h2>
             <div class="row">
                 <div class="col-lg-6 col-10 mx-auto">
                     <figure class="about_hero__img">
-                        <img src="./images/robo.png" alt="" />
+                        <img src={{ url_for('static', filename='./images/robo.png') }} alt="" />
                     </figure>
                 </div>
                 <div class="col-lg-6 col-10 mx-auto">
@@ -118,7 +118,7 @@
                 <div class="col-md-3">
                     <div class="wrappernew">
                         <div class="cardnew">
-                            <img src="./images/team/11.jpeg" alt="Bridge">
+                            <img src={{ url_for('static', filename='./images/team/11.jpeg') }} alt="Bridge">
                             <div class="infonew">
                                 <h3>Dr. Tanuja Sheorey</h3>
                                 <p>Faculty Incharge</p>
@@ -131,7 +131,7 @@
                 <div class="col-md-3">
                     <div class="wrappernew">
                         <div class="cardnew">
-                            <img src="./images/team/5.jpeg" alt="Bridge">
+                            <img src={{ url_for('static', filename='./images/team/11.jpeg') }} alt="Bridge">
                             <div class="infonew">
                                 <h3>Ayush Mishra</h3>
                                 <p>Coordinator</p>
@@ -144,7 +144,7 @@
                 <div class="col-md-3">
                     <div class="wrappernew">
                         <div class="cardnew">
-                            <img src="./images/team/3.jpeg" alt="Bridge">
+                            <img src={{ url_for('static', filename='./images/team/11.jpeg') }} alt="Bridge">
                             <div class="infonew">
                                 <h3>Arunabh Mittal</h3>
                                 <p>Co Coordinator</p>
@@ -157,7 +157,7 @@
                 <div class="col-md-3">
                     <div class="wrappernew">
                         <div class="cardnew">
-                            <img src="./images/team/8.jpeg" alt="Bridge">
+                            <img src={{ url_for('static', filename='./images/team/11.jpeg') }} alt="Bridge">
                             <div class="infonew">
                                 <h3>Rajat Kumar</h3>
                                 <p>Project Manager</p>
@@ -167,117 +167,7 @@
                         </div>
                     </div>
                 </div>
-            </div>	<br><br><br><br>		
-            <div class="row">
-        
-                <div class="col-md-3">
-                    <div class="wrappernew">
-                        <div class="cardnew">
-                            <img src="./images/team/4.jpeg" alt="Bridge">
-                            <div class="infonew">
-                                <h3>Ayush Kumar</h3>
-                                <p>Mesh Analyzer</p>
-                                <a href="https://www.linkedin.com/in/ayush-kumar-157628207" target="_blank" class="box"><i class="fab fa-linkedin"></i></a>
-                                <a href="https://www.instagram.com/ayushk0806/" target="_blank" class="box"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div><br><br><br>
-                <div class="col-md-3">
-                    <div class="wrappernew">
-                        <div class="cardnew">
-                            <img src="./images/team/2.jpeg" alt="Bridge">
-                            <div class="infonew">
-                                <h3>Arihant Jain</h3>
-                                <p>Mesh Analyzer</p>
-                                <a href="https://in.linkedin.com/in/arihant-jain-09" target="_blank" class="box"><i class="fab fa-linkedin"></i></a>
-                                <a href="https://www.instagram.com/arihant_jain_09/" target="_blank" class="box"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div><br><br><br>
-                <div class="col-md-3">
-                    <div class="wrappernew">
-                        <div class="cardnew">
-                            <img src="./images/team/10.jpeg" alt="Bridge">
-                            <div class="infonew">
-                                <h3>Somya Prajapati</h3>
-                                <p>Developer</p>
-                                <a href="https://www.linkedin.com/in/somya51p/" target="_blank" class="box"><i class="fab fa-linkedin"></i></a>
-                                <a href="https://www.instagram.com/_somya2001p_" target="_blank" class="box"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div><br><br><br>
-                <div class="col-md-3">
-                    <div class="wrappernew">
-                        <div class="cardnew">
-                            <img src="./images/team/12.jpeg" alt="Bridge">
-                            <div class="infonew">
-                                <h3>Anurag Vij</h3>
-                                <p>CAD Expert</p>
-                                <a href="http://www.linkedin.com/in/anurag-vij-2b259a207" target="_blank" class="box"><i class="fab fa-linkedin"></i></a>
-                                <a href="https://www.instagram.com/anuragvij56/" target="_blank" class="box"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>	<br><br><br><br>
-            <div class="row">
-        
-                <div class="col-md-3">
-                    <div class="wrappernew">
-                        <div class="cardnew">
-                            <img src="./images/team/1.jpeg" alt="Bridge">
-                            <div class="infonew">
-                                <h3>Abhishek Yadav</h3>
-                                <p>Quantum Neoretic</p>
-                                <a href="https://www.linkedin.com/in/abhishek-yadav-765672198" target="_blank" class="box"><i class="fab fa-linkedin"></i></a>
-                                <a href="https://www.instagram.com/invites/contact/?i=1naumwdbbt1j7&utm_content=6qhrdxs" target="_blank" class="box"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div><br><br><br>
-                <div class="col-md-3">
-                    <div class="wrappernew">
-                        <div class="cardnew">
-                            <img src="./images/team/7.jpeg" alt="Bridge">
-                            <div class="infonew">
-                                <h3>Priyansh Nama</h3>
-                                <p>Coding Ninja</p>
-                                <a href="https://www.linkedin.com/in/priyanshnama/" target="_blank" class="box"><i class="fab fa-linkedin"></i></a>
-                                <a href="https://www.instagram.com/priyanshnama/" target="_blank" class="box"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div><br><br><br>
-                <div class="col-md-3">
-                    <div class="wrappernew">
-                        <div class="cardnew">
-                            <img src="./images/team/9.jpeg" alt="Bridge">
-                            <div class="infonew">
-                                <h3>Shivam Sourav Jha</h3>
-                                <p>Coding Ninja</p>
-                                <a href="https://www.linkedin.com/in/shivamsouravjha" target="_blank" class="box"><i class="fab fa-linkedin"></i></a>
-                                <a href="https://instagram.com/shivamsouravjha?utm_medium=copy_link" target="_blank" class="box"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div><br><br><br>
-                <div class="col-md-3">
-                    <div class="wrappernew">
-                        <div class="cardnew">
-                            <img src="./images/team/6.jpeg" alt="Bridge">
-                            <div class="infonew">
-                                <h3>Parv Yadav</h3>
-                                <p>Digital Manager</p>
-                                <a href=" https://www.linkedin.com/in/parv-yadav-b54480193/" target="_blank" class="box"><i class="fab fa-linkedin"></i></a>
-                                <!-- <a href="https://youtube.com/channel/UCPY8rVtrR8cCqb3jmMtek4w" target="_blank" class="box"><i class="fab fa-instagram"></i></a> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>					
+            </div>	<br><br><br><br>		        		
     </div>  
 </section>
 
@@ -292,7 +182,7 @@
             <div class="col-md-6 wow bounceInLeft" data-wow-duration="1s">
                 <div class="service">
                     <div class="icon-holder">
-                        <img src="./images/form.png" alt="" class="icon">
+                        <img src={{ url_for('static', filename='./images/form.png') }} alt="" class="icon">
                     </div>
                     <h4 class="heading">Membership form</h4>
                     <p class="description"><a href="https://docs.google.com/forms/" class="btn btn-green" style="color: aliceblue;"> Download</a></p>
@@ -301,7 +191,7 @@
             <div class="col-md-6 wow bounceInUp" data-wow-duration="1s">
                 <div class="service">
                     <div class="icon-holder">
-                        <img src="./images/report.png" alt="" class="icon">
+                        <img src={{ url_for('static', filename='./images/report') }} alt="" class="icon">
                     </div>
                     <h4 class="heading">Members</h4>
                     <p class="description"><a href="./images/ers.pdf" class="btn btn-green" style="color: aliceblue;"> Download</a></p>
@@ -353,7 +243,7 @@
     </div>
     <div class="wrapper container">
         <div class="copyright">
-            <p>Copyright &copy;2021 All rights reserved | Made with
+            <p>Copyright &copy;2022 All rights reserved | Made with
         <i class="far fa-heart"></i> by <a href="https://github.com/somya51p/" target="_blank">Somya Prajapati</a></p>
         </div>
         <div class="icons">

@@ -10,7 +10,7 @@
     content="Learn about the health benefits of getting a full night's sleep! Reflect on your habits using our sleep calculator, then browse our tips and resources for information on how you can sleep better" />
 
   <!-- Styles -->
-  <link rel="stylesheet" href="./assets/styles/styles.css" />
+  <link rel="stylesheet" href="../static/assets/styles/styles.css" />
   <link rel="preload" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" as="style" onload="this.onload==null;this.rel='stylesheet'"
     integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous" />
   <noscript><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -201,7 +201,7 @@
           </p>
         </div>
         <div class="grid-item">
-          <img src="./assets/images/tiredWorker.svg" alt="A person is asleep at  their desk." />
+          <img src={{ url_for('static', filename='./assets/images/tiredWorker.svg') }} alt="A person is asleep at  their desk." />
         </div>
         <div class="grid-item">
           <!-- col-3-row-2-item-3 -->
@@ -400,7 +400,7 @@
   </div>
 </body>
 <!-- Scripts -->
-<script src="./assets/scripts/index.js"></script>
-<script src="./assets/scripts/cloud.js"></script>
-<script src="./assets/scripts/calculator.js"></script>
+<script src={{ url_for('static', filename='./assets/scripts/index.js') }}></script>
+<script src={{ url_for('static', filename='./assets/scripts/cloud.js') }}></script>
+<script src={{ url_for('static', filename='./assets/scripts/calculator.js') }}></script>
 </html>
