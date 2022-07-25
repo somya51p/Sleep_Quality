@@ -56,7 +56,7 @@ def index():
 
 @app.route("/quality")
 def quality():
-    return render_template("quality.html")
+    return render_template("quality.html", valBP=valBP, valSpO2=valSpO2, valTemp=valTemp)
 
 if __name__=="__main__":
     app.run(debug=True)
