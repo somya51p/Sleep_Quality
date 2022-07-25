@@ -214,10 +214,10 @@ async function buildCalculator() {
 }
 
 async function fetchData(fileName) {
+  console.log("response1");
   return fetch(fileName).then((response) => {
-    console.log("response");
+    console.log("response2");
     return response.json();
   });
 }
 
-buildCalculator();

@@ -1,6 +1,8 @@
+from numpy import average
 import pyrebase
 from flask import Flask, render_template, request
 from flask_cors import cross_origin
+import random
 
 app=Flask(__name__)
 
@@ -46,6 +48,44 @@ for user in users.each():
    
         valTemp = float(sum / count)
 
+good = ['a', 'b', 'c']
+bad = ['d', 'e', 'f']
+avg = ['g', 'h', 'i']
+
+if(valBP >= 40 and valBP <=60 and valSpO2>=98 and valSpO2<=100 and valTemp>=96.6 and valTemp<=98.6):
+    sentence = "Best sleep quality!"
+elif(valBP >= 40 and valBP <=60 and valSpO2>=98 and valSpO2<=100 and not(valTemp>=96.6 and valTemp<=98.6)):
+    sentence = "Good sleep quality!"
+elif(valBP >= 40 and valBP <=60 and not(valSpO2>=98 and valSpO2<=100) and (valTemp>=96.6 and valTemp<=98.6)):
+    sentence = "Good sleep quality!"
+elif(not(valBP >= 40 and valBP <=60) and valSpO2>=98 and valSpO2<=100 and not(valTemp>=96.6 and valTemp<=98.6)):
+    sentence = "Good sleep quality!"
+
+elif(valBP >= 100 and valSpO2<=90 and (valTemp>=98.6 or valTemp<=96.6)):
+    sentence = "Bad sleep quality!"
+elif(not(valBP >= 100) and valSpO2<=90 and (valTemp>=98.6 or valTemp<=96.6)):
+    sentence = "Bad sleep quality!"
+elif(valBP >= 100 and not(valSpO2<=90) and (valTemp>=98.6 or valTemp<=96.6)):
+    sentence = "Bad sleep quality!"
+elif(valBP >= 100 and valSpO2<=90 and not(valTemp>=98.6 or valTemp<=96.6)):
+    sentence = "Bad sleep quality!"
+
+else:
+    sentence = "Average sleep quality!"
+
+if(sentence == "Best sleep quality!" or sentence == "Good sleep quality!"):
+    random_index = random.randrange(len(good))
+    recommendation = good[random_index]
+
+if(sentence == "Bad sleep quality!"):
+    random_index = random.randrange(len(bad))
+    recommendation = bad[random_index]
+    print(recommendation)
+
+if(sentence == "Average sleep quality!"):
+    random_index = random.randrange(len(avg))
+    recommendation = avg[random_index]
+
 @app.route("/")
 def home():
     return render_template("home.html")
@@ -56,7 +96,7 @@ def index():
 
 @app.route("/quality")
 def quality():
-    return render_template("quality.html", valBP=valBP, valSpO2=valSpO2, valTemp=valTemp)
+    return render_template("quality.html", valBP=valBP, valSpO2=valSpO2, valTemp=valTemp, sentence=sentence, recommendation=recommendation)
 
 if __name__=="__main__":
     app.run(debug=True)
