@@ -49,7 +49,7 @@ for user in users.each():
         valTemp = float(sum / count)
 
 good = ['a', 'b', 'c']
-bad = ['d', 'e', 'f']
+bad = ['Going to bed when you feel tired and getting up at roughly the same time helps teach your body to sleep better. Try to avoid napping where possible.', 'Dark, quiet and cool environments generally make it easier to fall asleep and stay asleep. Watch our video for tips on how to sleep better.', 'If you often lie awake worrying about tomorrow, set aside time before bed to make a list for the next day. This can help put your mind at rest.']
 avg = ['g', 'h', 'i']
 
 if(valBP >= 40 and valBP <=60 and valSpO2>=98 and valSpO2<=100 and valTemp>=96.6 and valTemp<=98.6):
