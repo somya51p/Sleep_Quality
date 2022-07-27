@@ -303,5 +303,15 @@ figure {
     font-size: 14px;
     line-height: 1.75;
   }
+
+  .chart {
+    width: 70%;
+    height: 70%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    align-items: center;
+    margin-left: 280px;
+  }
   
   
