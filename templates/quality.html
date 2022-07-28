@@ -59,7 +59,7 @@
                               <div class="content">
                                   <!-- <h6 class="category">Best cards</h6> -->
                                   <h4 class="title"><a href="#">HeartRate:</a></h4>
-                                  <p class="description">{{valBP}} </p>
+                                  <p class="description"> {{valBP}}  </p>
                                   <br> <p class="status" style="color: teal;">Status: Running...</p>
                               </div>
                           </div> <!-- end card -->
@@ -85,7 +85,7 @@
                               <div class="content">
                                   <!-- <h6 class="category">Best cards</h6> -->
                                   <h4 class="title"><a href="#">Temperature</a></h4>
-                                  <p class="description">{{valTemp }}</p>
+                                  <p class="description">{{valTemp}} </p>
                                   <br> <p class="status" style="color: teal;">Status: Running...</p>
                               </div>
                           </div> <!-- end card -->
@@ -100,7 +100,7 @@
                             <div class="content">
                                 <!-- <h6 class="category">Best cards</h6> -->
                                 <h4 class="title"><a href="#">Accelerometer</a></h4>
-                                <p class="description">{{valTemp }}</p>
+                                <p class="description">. </p>
                                 <br> <p class="status" style="color: teal;">Status: Running...</p>
                             </div>
                         </div> <!-- end card -->
@@ -113,7 +113,7 @@
                           <div class="content">
                               <!-- <h6 class="category">Best cards</h6> -->
                               <h4 class="title"><a href="#">Light Intensity</a></h4>
-                              <p class="description">{{valTemp }}</p>
+                              <p class="description">105</p>
                               <br> <p class="status" style="color: teal;">Status: Running...</p>
                           </div>
                       </div> <!-- end card -->
@@ -123,7 +123,7 @@
             </div>
             <br><br><br>
             <figure class="image-block">
-              <h1> Quality: {{sentence}} </h1>
+              <h1>  {{sentence}} </h1>
               <figcaption>
                 <h3>
                   Open Recommendation!!
@@ -149,22 +149,22 @@
              data: {
                labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
                datasets: [{ 
-                   data: [86,114,106,106,107,111,133],
+                   data: [0, 0, 0, 1, 0, 0, 0],
                    label: "Best",
                    borderColor: "rgb(62,149,205)",
                    backgroundColor: "rgb(62,149,205,0.1)",
                  }, { 
-                   data: [70,90,44,60,83,90,100],
+                   data: [0, 2, 2, 0, 0, 0, 0],
                    label: "Good",
                    borderColor: "rgb(60,186,159)",
                    backgroundColor: "rgb(60,186,159,0.1)",
                  }, { 
-                   data: [10,21,60,44,17,21,17],
+                   data: [3, 0, 0, 0, 3, 0, 0],
                    label: "Average",
                    borderColor: "rgb(255,165,0)",
                    backgroundColor:"rgb(255,165,0,0.1)",
                  }, { 
-                   data: [6,3,2,2,7,0,16],
+                   data: [0, 0, 0, 0, 0, 4, 4],
                    label: "Bad",
                    borderColor: "rgb(196,88,80)",
                    backgroundColor:"rgb(196,88,80,0.1)",

@@ -22,32 +22,36 @@ db=firebase.database()
 
 auth=firebase.database()
 
-users = db.child("json").get()
+users = db.child("Readings/json").get()
 
 for user in users.each():
     count = 0
     sum = 0
     if(user.key() == "HeartRate"):
         for key, value in user.val().items():
-            sum += (int(value))
-            count = count + 1
+            if(value != 0):
+                sum = sum + value
+                count = count + 1
    
         valBP = float(sum / count)
 
-    if(user.key() == "SPO2"):
+    if(user.key() == "SpO2"):
         for key, value in user.val().items():
-            sum += (int(value))
-            count = count + 1
+            if(value != 0):
+                sum = sum + value
+                count = count + 1
    
         valSpO2 = float(sum / count)
         # valTemp = random.randint(95, 100)
 
     if(user.key() == "Temperature"):
         for key, value in user.val().items():
-            sum += (int(value))
-            count = count + 1
+            if(value>=95 and value<=100):
+                sum = sum + value
+                count = count + 1
    
         valTemp = float(sum / count)
+
 
 good = ['Going to bed when you feel tired and getting up at roughly the same time helps teach your body to sleep better. Try to avoid napping where possible.', 'Dark, quiet and cool environments generally make it easier to fall asleep and stay asleep. Watch our video for tips on how to sleep better.', 'If you often lie awake worrying about tomorrow, set aside time before bed to make a list for the next day. This can help put your mind at rest.']
 bad = ['Going to bed when you feel tired and getting up at roughly the same time helps teach your body to sleep better. Try to avoid napping where possible.', 'Dark, quiet and cool environments generally make it easier to fall asleep and stay asleep. Watch our video for tips on how to sleep better.', 'If you often lie awake worrying about tomorrow, set aside time before bed to make a list for the next day. This can help put your mind at rest.']
